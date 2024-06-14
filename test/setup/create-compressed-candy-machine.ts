@@ -1,26 +1,68 @@
-import { Connection, Keypair, PublicKey } from "@solana/web3.js";
-import { Metaplex, keypairIdentity, toMetaplexFile, toBigNumber, CreateCandyMachineInput, DefaultCandyGuardSettings, CandyMachineItem, toDateTime, sol, TransactionBuilder, CreateCandyMachineBuilderContext } from "@metaplex-foundation/js";
+import {Connection, Keypair, PublicKey} from "@solana/web3.js";
+import {
+  Metaplex,
+  toBigNumber,
+  CreateCandyMachineInput,
+  DefaultCandyGuardSettings,
+  toDateTime,
+  sol,
+  keypairIdentity
+} from "@metaplex-foundation/js";
 import fs from "fs";
+import { createUmi } from '@metaplex-foundation/umi-bundle-defaults'
+import {
+  generateSigner,
+  keypairIdentity as umiKeypairIdentity,
+  Umi,
+  publicKey, none
+} from '@metaplex-foundation/umi'
+import {createTree, fetchMerkleTree, mintV1} from "@metaplex-foundation/mpl-bubblegum";
+import bs58 from "bs58";
 
 // INFO: https://www.quicknode.com/guides/solana-development/nfts/how-to-create-a-solana-nft-collection-using-candy-machine-v3-and-typescript#mint-an-nft
 
 // TODO: https://solana.com/developers/guides/javascript/compressed-nfts
 
+
+// We need to create a bubblegum tree to hold compressed NFTs
+// These compressed nfts will be burnt to mint the NFTs from the candy machine
+
+// To create a candy machine, we need to create a collection NFT
+// To create a collection NFT, we need to create a metadata file
+
+// 1. Create bubblegum tree
+// 2. Create a collection NFT
+// 3. Generate a candy machine with candy guard requirement of burning nft from bubblegum tree
+// 4. Mint compressed NFTs and transfer to wallet
+// 5. Mint NFTs from candy machine
+
 async function main(walletFile: string) {
   const SOLANA_CONNECTION = new Connection("https://api.devnet.solana.com");
   const WALLET = Keypair.fromSecretKey(Uint8Array.from(JSON.parse(fs.readFileSync(walletFile, 'utf-8'))));
-  const COLLECTION_NFT_MINT = 'G8aghEvM5UZMHNRsbUtVL5Tnw6Lw5Wr9vvDqNPgckEET';
-  const CANDY_MACHINE_ID = '35EMRvcggvEcpWh6k3gAraUz5VHh6AM6bd68zquoqSFR';
+  // Location of the NFT metadata file
   const NFT_METADATA = './devnet/sample-images/images.json';
+  // Obtained from tx from createCollectionNft
+  const COLLECTION_NFT_MINT = 'G8aghEvM5UZMHNRsbUtVL5Tnw6Lw5Wr9vvDqNPgckEET';
+  const MERKLE_TREE = 'Gif14wdrBrju41DyxNpnS1iBNtZUVam6MwuPG47ePGj9';
+
+  // Obtained from tx from generateCandyMachine
+  const CANDY_MACHINE_ID = '35EMRvcggvEcpWh6k3gAraUz5VHh6AM6bd68zquoqSFR';
 
   const METAPLEX = Metaplex.make(SOLANA_CONNECTION)
     .use(keypairIdentity(WALLET));
+
+  const umi = createUmi("https://api.devnet.solana.com")
+  const signer = umi.eddsa.createKeypairFromSecretKey(WALLET.secretKey);
+  umi.use(umiKeypairIdentity(signer))
 
   // await createCollectionNft(METAPLEX, NFT_METADATA, WALLET);
   // await generateCandyMachine(COLLECTION_NFT_MINT, WALLET, METAPLEX);
   // await updateCandyMachine(METAPLEX, CANDY_MACHINE_ID);
   // await addItems(METAPLEX, CANDY_MACHINE_ID, NFT_METADATA);
-  await mintNft(METAPLEX, CANDY_MACHINE_ID, WALLET);
+  // await createBubbleGumTree(umi, 120);
+  // await fetchBubbleGumTree(umi, MERKLE_TREE);
+  await mintCompressedNft(umi, MERKLE_TREE);
+  // await mintNft(METAPLEX, CANDY_MACHINE_ID, WALLET);
 }
 
 async function generateCandyMachine(COLLECTION_NFT_MINT: string, WALLET: Keypair, METAPLEX: Metaplex) {
@@ -116,3 +158,49 @@ async function createCollectionNft(METAPLEX: Metaplex, NFT_METADATA: string, WAL
 }
 
 main("./devnet/wallet.json").catch(console.error);
+
+async function createBubbleGumTree(umi: Umi, entrants: number) {
+  // TODO: Calculate the depth of the merkle tree based on the number of entrants and maxBufferSize
+  const merkleTreeDepth = 14
+  const maxBufferSize = 64
+
+  const signer = generateSigner(umi)
+
+  console.log(`🌳 - Creating bubblegum tree with ${entrants} entrants and depth of ${merkleTreeDepth}`)
+  const builder =  await createTree(umi, {
+    merkleTree: signer,
+    maxDepth: merkleTreeDepth,
+    maxBufferSize: maxBufferSize,
+  })
+  const resp = await builder.sendAndConfirm(umi)
+  console.log(`✅ - Created bubblegum tree's merkle tree: ${bs58.encode(resp.signature)}`);
+  console.log(`     https://explorer.solana.com/tx/${bs58.encode(resp.signature)}?cluster=devnet`);
+
+  // TODO process ix and return the merkle tree address
+  return resp
+}
+
+async function fetchBubbleGumTree(umi: Umi, pdaAddress: string) {
+  const tree =  await fetchMerkleTree(umi, publicKey(pdaAddress))
+  console.log({tree});
+  return tree
+}
+
+async function mintCompressedNft(umi: Umi, merkleTree: string) {
+  const signer = generateSigner(umi)
+  await mintV1(umi, {
+    treeCreatorOrDelegate: signer,
+
+    leafOwner: signer.publicKey,
+    merkleTree: publicKey(merkleTree),
+    metadata: {
+      name: 'My Compressed NFT',
+      uri: 'https://example.com/my-cnft.json',
+      sellerFeeBasisPoints: 500, // 5%
+      collection: none(),
+      creators: [
+        { address: umi.identity.publicKey, verified: false, share: 100 },
+      ],
+    },
+  }).sendAndConfirm(umi)
+}
