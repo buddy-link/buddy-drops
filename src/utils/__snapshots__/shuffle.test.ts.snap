@@ -1,0 +1,1677 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fisher-yates shuffle should shuffle the array 1`] = `
+[
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+]
+`;
+
+exports[`fisher-yates shuffle should shuffle the array 2`] = `
+RNGSfc32Generator {
+  "rng": RNGSfc32 {
+    "_rng": [Function],
+    "_seed": [
+      72,
+      80,
+      112,
+      89,
+    ],
+  },
+}
+`;
+
+exports[`fisher-yates shuffle should shuffle the array differently 1`] = `
+[
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+]
+`;
+
+exports[`fisher-yates shuffle should shuffle the array differently 2`] = `
+RNGSfc32Generator {
+  "rng": RNGSfc32 {
+    "_rng": [Function],
+    "_seed": [
+      116,
+      104,
+      105,
+      115,
+    ],
+  },
+}
+`;
+
+exports[`fisher-yates shuffle with offset should shuffle the array 1`] = `
+[
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+]
+`;
+
+exports[`fisher-yates shuffle with offset should shuffle the array 2`] = `
+RNGSfc32Generator {
+  "rng": RNGSfc32 {
+    "_rng": [Function],
+    "_seed": [
+      72,
+      80,
+      112,
+      89,
+    ],
+  },
+}
+`;
+
+exports[`fisher-yates shuffle with offset should shuffle the array differently 1`] = `
+[
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "C",
+    "quantityOfTickets": 5,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "J",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "D",
+    "quantityOfTickets": 7,
+  },
+  {
+    "publicKey": "G",
+    "quantityOfTickets": 6,
+  },
+  {
+    "publicKey": "A",
+    "quantityOfTickets": 10,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "K",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "E",
+    "quantityOfTickets": 12,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "F",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "L",
+    "quantityOfTickets": 9,
+  },
+  {
+    "publicKey": "H",
+    "quantityOfTickets": 4,
+  },
+  {
+    "publicKey": "B",
+    "quantityOfTickets": 8,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+  {
+    "publicKey": "I",
+    "quantityOfTickets": 11,
+  },
+]
+`;
+
+exports[`fisher-yates shuffle with offset should shuffle the array differently 2`] = `
+RNGSfc32Generator {
+  "rng": RNGSfc32 {
+    "_rng": [Function],
+    "_seed": [
+      116,
+      104,
+      105,
+      115,
+    ],
+  },
+}
+`;
