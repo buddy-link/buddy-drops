@@ -758,6 +758,16 @@
     "@solana/spl-token" "^0.3.6"
     "@solana/web3.js" "^1.66.2"
 
+"@metaplex-foundation/mpl-candy-machine@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@metaplex-foundation/mpl-candy-machine/-/mpl-candy-machine-6.0.1.tgz#e7b0deeadaa75890e8282d3a27f57b0833722833"
+  integrity sha512-ODm7JWQBPg7w4DXEkLejgLtMqfjxMcQkH+GSMgq9i0KyGd0asD2PVOQoL4QMorNQ4E1pIPAdc31Td57qxG059g==
+  dependencies:
+    "@metaplex-foundation/mpl-token-metadata" "3.0.0-alpha.27"
+    "@metaplex-foundation/mpl-toolbox" "^0.9.0"
+    "@noble/hashes" "^1.2.0"
+    merkletreejs "^0.3.9"
+
 "@metaplex-foundation/mpl-core-candy-machine@^0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@metaplex-foundation/mpl-core-candy-machine/-/mpl-core-candy-machine-0.2.1.tgz#436a7f99e04a15ba3eacd8a261040c77da2bf241"
