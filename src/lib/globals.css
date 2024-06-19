@@ -12,7 +12,9 @@ html, body {
     align-items: center;
     min-width: 100%;
     width: 100%;
-    background: black;
+    background: #171717;
+    min-height: 100vh;
+    height: 100%;
 }
 
 main {

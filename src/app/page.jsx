@@ -4,11 +4,7 @@ import Home from "./(home)/Home";
 const HomePage = () => {
 
 
-  return (
-    <div>
-      <Home/>
-    </div>
-  )
+  return <Home/>;
 };
 
 export default HomePage;

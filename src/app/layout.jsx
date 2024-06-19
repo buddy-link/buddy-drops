@@ -1,13 +1,18 @@
 "use client";
 
-import { initBuddyState, useBuddyState } from 'buddy.link';
+import {initBuddyState, useBuddyState} from '../lib/buddy';
 import {initialState, THEME_PALETTE} from '../lib/state';
 import { theme } from '../lib/theme';
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from 'styled-components';
 import StyledProvider from '../lib/styled';
-
+import {
+  ConnectionProvider,
+  WalletProvider,
+} from "@solana/wallet-adapter-react";
+require('@solana/wallet-adapter-react-ui/styles.css');
 import '../lib/globals.css';
+import {WalletModalProvider} from "@solana/wallet-adapter-react-ui";
 
 const withThemes = (palette) => {
   return {
@@ -25,19 +30,24 @@ const poppins = Poppins({
 });
 
 const RootLayout = ({ children }) => {
+  const endpoint = process.env.NEXT_PUBLIC_RPC_ENDPOINT;
   const [palette, setPalette] = useBuddyState(THEME_PALETTE);
-
-
 
   return (
     <html lang={"en"}>
-    <body className={poppins.className}>
-    <ThemeProvider theme={withThemes(palette)}>
-      <StyledProvider>
-        {children}
-      </StyledProvider>
-    </ThemeProvider>
-    </body>
+      <body className={poppins.className}>
+        <ConnectionProvider endpoint={ endpoint }>
+          <WalletProvider wallets={[]} autoConnect>
+            <WalletModalProvider>
+              <ThemeProvider theme={withThemes(palette)}>
+                <StyledProvider>
+                  {children}
+                </StyledProvider>
+              </ThemeProvider>
+            </WalletModalProvider>
+          </WalletProvider>
+        </ConnectionProvider>
+      </body>
     </html>
   );
 }
