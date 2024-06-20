@@ -10,7 +10,7 @@ import {
   _padding, _success, _connect, _disconnect, _max,
   _error, _username
 } from './Home.styled.js';
-import {ERROR_MAX_TICKETS, PHASE_PUBLIC_SALE, PHASE_WHITELIST} from '../../lib/state';
+import {ERROR_MAX_TICKETS, PHASE_PUBLIC_SALE, PHASE_WAIT, PHASE_WHITELIST, REWARD_NFT} from '../../lib/state';
 import { useBuddyDrops } from "./hooks/useBuddyDrops";
 import useRefs from "../../lib/hooks/useRefs";
 import {useWallet, useConnection} from "@solana/wallet-adapter-react";
@@ -184,18 +184,11 @@ const Home = () => {
         </_float>
         <_step>
           <_results>
-            You have <b>{rewards?.total}</b> Rewards
+            You have <b>{+rewards?.length || 0}</b> Rewards
           </_results>
           <_rewards>
-            <_nft>
-              NFT
-            </_nft>
-            <_nft>
-              NFT
-            </_nft>
-            <_sol>
-              2 SOL
-            </_sol>
+            {rewards.map(reward =>
+              (reward === REWARD_NFT ? <_nft>NFT</_nft> : <_sol>2 SOL</_sol>))}
           </_rewards>
           <_claim>
             Claim Rewards
@@ -223,7 +216,7 @@ const Home = () => {
           <b>Step {step}</b>
           <span>{phase === PHASE_WHITELIST ?
                 'Whitelist' : phase === PHASE_PUBLIC_SALE ?
-                'Public Sale' : 'Waiting...'}</span>
+                'Public Sale' : phase === PHASE_WAIT ? 'Waiting...' : 'Claim!'}</span>
         </_current>
         <_next onClick={() => nextStep(max_step)} $active={step < max_step}>
           Next

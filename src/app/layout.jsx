@@ -1,6 +1,6 @@
 "use client";
 
-import {initBuddyState, useBuddyState} from '../lib/buddy';
+import {initBuddyState, useBuddyState} from '../../packages/drops/src/buddy';
 import {initialState, THEME_PALETTE} from '../lib/state';
 import { theme } from '../lib/theme';
 import { Poppins } from "next/font/google";
@@ -21,7 +21,8 @@ const withThemes = (palette) => {
 };
 
 initBuddyState({
-  ...initialState
+  ...initialState,
+  [THEME_PALETTE]: 'light',
 });
 
 const poppins = Poppins({
