@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import {
   _home, _float, _label, _buy, _step,
   _select, _input, _add, _reduce, _tickets,
@@ -10,8 +10,8 @@ import {
   _padding, _success, _connect, _disconnect, _max,
   _error, _username
 } from './Home.styled.js';
-import {ERROR_MAX_TICKETS, PHASE_PUBLIC_SALE, PHASE_WHITELIST} from '../../lib/state';
-import { useBuddyDrops } from "./hooks/useBuddyDrops";
+import {ERROR_MAX_TICKETS, PHASE_PUBLIC_SALE, PHASE_WAIT, PHASE_WHITELIST, REWARD_NFT} from 'buddy.drops';
+import { useBuddyDrops } from "buddy.drops";
 import useRefs from "../../lib/hooks/useRefs";
 import {useWallet, useConnection} from "@solana/wallet-adapter-react";
 import {useWalletModal} from "@solana/wallet-adapter-react-ui";
