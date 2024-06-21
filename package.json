@@ -8,12 +8,16 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
     "@solana/wallet-adapter-base": "0.9.23",
     "@solana/wallet-adapter-react": "0.15.35",
     "@solana/wallet-adapter-react-ui": "0.9.35",
     "@solana/wallet-adapter-wallets": "0.19.32",
     "@solana/web3.js": "1.93.0",
+    "buddy.drops": "0.1.0",
     "next": "14.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

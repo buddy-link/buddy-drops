@@ -1,7 +1,6 @@
 "use client";
 
-import {initBuddyState, useBuddyState} from '../lib/buddy';
-import {initialState, THEME_PALETTE} from '../lib/state';
+import {initBuddyDrops} from 'buddy.drops';
 import { theme } from '../lib/theme';
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from 'styled-components';
@@ -20,9 +19,7 @@ const withThemes = (palette) => {
   };
 };
 
-initBuddyState({
-  ...initialState
-});
+initBuddyDrops();
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,7 +28,6 @@ const poppins = Poppins({
 
 const RootLayout = ({ children }) => {
   const endpoint = process.env.NEXT_PUBLIC_RPC_ENDPOINT;
-  const [palette, setPalette] = useBuddyState(THEME_PALETTE);
 
   return (
     <html lang={"en"}>
@@ -39,7 +35,7 @@ const RootLayout = ({ children }) => {
         <ConnectionProvider endpoint={ endpoint }>
           <WalletProvider wallets={[]} autoConnect>
             <WalletModalProvider>
-              <ThemeProvider theme={withThemes(palette)}>
+              <ThemeProvider theme={withThemes("light")}>
                 <StyledProvider>
                   {children}
                 </StyledProvider>
