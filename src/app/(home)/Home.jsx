@@ -22,7 +22,7 @@ const Home = () => {
   const { setVisible } = useWalletModal();
   const { step, prevStep, nextStep, timer,
     pause, value, rewards, inputProps,
-    reduceTickets, addTickets, tickets, buyTickets,
+    reduceValue, addValue, tickets, buyTickets,
     errors, onChange, onBlur, username, nextPhase,
     phase
   } = useBuddyDrops();
@@ -70,13 +70,13 @@ const Home = () => {
         </_float>
         <_step $first>
           <_select>
-            <_reduce onClick={() => reduceTickets(min_tickets)}>
+            <_reduce onClick={() => reduceValue(min_tickets)}>
               -
             </_reduce>
             <_input>
               <input {...inputProps} onChange={e => onChange(e, min_tickets, max_tickets - tickets)}/>
             </_input>
-            <_add onClick={() => addTickets(max_tickets)}>
+            <_add onClick={() => addValue(max_tickets)}>
               +
             </_add>
           </_select>
