@@ -1,6 +1,6 @@
 "use client";
 
-import {initBuddyDrops} from 'buddy.drops';
+import {initBuddyDrops} from '../index';
 import { theme } from '../lib/theme';
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from 'styled-components';
@@ -27,7 +27,7 @@ const poppins = Poppins({
 });
 
 const RootLayout = ({ children }) => {
-  const endpoint = process.env.NEXT_PUBLIC_RPC_ENDPOINT;
+  const endpoint = process.env.NEXT_PUBLIC_DEVNET_RPC;
 
   return (
     <html lang={"en"}>

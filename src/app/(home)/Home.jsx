@@ -10,11 +10,15 @@ import {
   _padding, _success, _connect, _disconnect, _max,
   _error, _username
 } from './Home.styled.js';
-import {ERROR_MAX_TICKETS, PHASE_PUBLIC_SALE, PHASE_WAIT, PHASE_WHITELIST, REWARD_NFT} from 'buddy.drops';
-import { useBuddyDrops } from "buddy.drops";
+import { getPurchaseConfigAccounts } from 'buddy.buy';
+
+import {ERROR_MAX_TICKETS, PHASE_PUBLIC_SALE, PHASE_WAIT, PHASE_WHITELIST, REWARD_NFT} from './../../index';
+import { useBuddyDrops } from "../../../src";
 import useRefs from "../../lib/hooks/useRefs";
 import {useWallet, useConnection} from "@solana/wallet-adapter-react";
 import {useWalletModal} from "@solana/wallet-adapter-react-ui";
+import {PublicKey} from "@solana/web3.js";
+
 
 const Home = () => {
   const { connection } = useConnection()
@@ -24,7 +28,7 @@ const Home = () => {
     pause, value, rewards, inputProps,
     reduceTickets, addTickets, tickets, buyTickets,
     errors, onChange, onBlur, username, nextPhase,
-    phase
+    phase, ready
   } = useBuddyDrops();
   const min_step = 1;
   const max_step = 5;
@@ -80,7 +84,7 @@ const Home = () => {
               +
             </_add>
           </_select>
-          <_buy onClick={() => buyTickets(+value, max_tickets).then(() => nextStep(max_step))}>
+          <_buy $disabled={!ready} onClick={() => buyTickets(+value, max_tickets).then(() => nextStep(max_step))}>
             Buy Tickets
           </_buy>
           {maxTicketsError ?

@@ -170,7 +170,9 @@ export const _buy = styled.div`
   font-weight: 700;
   color: rgba(255,255,255,0.8);
   transition: transform 0.1s ease-out;
-  &::selection {
+	opacity: ${({ $disabled }) => $disabled ? 0.15 : 1};
+  pointer-events: ${({ $disabled }) => $disabled ? 'none' : 'all'};
+	&::selection {
     background: transparent;
   }
   &:hover {
