@@ -14,7 +14,7 @@ import {
   REWARDS_EARNED,
   TICKETS_OWNED,
   TICKETS_SELECTED, TICKETS_SOLD,
-  USER_STEP, IS_READY
+  USER_STEP, IS_READY, BUDDY_CONNECTION
 } from "./state";
 import {useEffect, useState} from "react";
 import usePrevious from "./buddy/usePrevious";
@@ -37,7 +37,7 @@ const calculateTimeLeft = (endTime) => {
 };
 
 export const useBuddyDrops = () => {
-  const [connection, setConnection] = useBuddyState(WALLET_)
+  const [connection, setConnection] = useBuddyState(BUDDY_CONNECTION)
   const [ready, setReady] = useBuddyState(IS_READY);
   const [value, setValue] = useBuddyState(TICKETS_SELECTED);
   const [step, setStep] = useBuddyState(USER_STEP);

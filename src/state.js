@@ -22,11 +22,13 @@ export const ACTIVE_PHASE = 'ACTIVE_PHASE';
 export const REWARD_NFT = 'REWARD_NFT';
 export const REWARD_SOL = 'REWARD_SOL';
 export const IS_READY = 'IS_READY';
+export const BUDDY_CONNECTION = 'BUDDY_CONNECTION';
 
 export const MOCK_DEBUG = 'MOCK_DEBUG';
 
 
 export const initialState = {
+  [BUDDY_CONNECTION]: '',
   [IS_READY]: false,
   [MOCK_DEBUG]: true,
   [ACTIVE_PHASE]: PHASE_WHITELIST,
